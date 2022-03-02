@@ -1,0 +1,27 @@
+{
+  "compilerOptions": {
+    "target": "esnext",
+    "lib": ["esnext"],
+    "moduleResolution": "node",
+    "types": [],
+    "strict": true,
+    "outDir": "dist",
+    "declaration": true,
+    "removeComments": true,
+    "allowSyntheticDefaultImports": true,
+    "experimentalDecorators": true,
+    "emitDecoratorMetadata": true,
+    "sourceMap": true,
+    "paths": {
+      "@spark/common": ["./src/common"],
+      "@spark/common/*": ["./src/common/*"],
+      "@spark/core": ["./src/core"],
+      "@spark/core/*": ["./src/core/*"]
+    }
+  },
+  "tstl": {
+    "luaTarget": "JIT"
+  },
+  "include": ["src/**/*"],
+  "exclude": ["node_modules", "**/*.spec.ts"]
+}
